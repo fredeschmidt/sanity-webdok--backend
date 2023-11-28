@@ -1,6 +1,6 @@
 export default {
-    title: 'Webdok',
-    name: 'webdok',
+    title: 'Webdok standard',
+    name: 'webdokStandard',
     type: 'document',
     fields: [
         {
@@ -13,7 +13,7 @@ export default {
             name: 'slug',
             type: 'slug',
             options: {
-                source: 'title',
+                source: 'heading',
                 maxLength: 200, // will be ignored if slugify is set
                 slugify: input => input
                         .toLowerCase()

@@ -1,1 +1,1 @@
-export {default as webdok} from './webdok'
+export {default as webdokStandard} from './webdokStandard'
