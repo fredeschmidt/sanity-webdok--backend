@@ -15,10 +15,7 @@ export default {
             options: {
                 source: 'heading',
                 maxLength: 200, // will be ignored if slugify is set
-                slugify: input => input
-                        .toLowerCase()
-                        .replace(/\s+/g, '-')
-                        .slice(0, 200)
+                slugify: input => encodeURIComponent(input.toLowerCase().replace(/\s+/g, '-').slice(0, 200)),
             }
         },
         {
